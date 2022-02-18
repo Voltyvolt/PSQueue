@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{290E6103-6BA4-4975-BBE8-A98AA5764772}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PSWeightCane</RootNamespace>
+    <AssemblyName>PSWeightCane</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>Z:\AutoUpdate\PSQueue\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://trrpsl.fortiddns.com/AutoUpdate/PSQueue/</UpdateUrl>
+    <TargetCulture>th-TH</TargetCulture>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <ApplicationRevision>666</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E3189F2F1738C867E6C95F1BA175B41250532E97</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PSQueue_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>2017-11-17_13-28-33.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FarPoint.CalcEngine, Version=5.0.3514.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Excel, Version=5.0.3514.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.PDF, Version=5.0.3514.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=5.0.3514.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win, Version=5.0.3514.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win.Chart, Version=5.0.3514.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win.Spread, Version=5.0.3514.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Export1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export1.Designer.cs">
+      <DependentUpon>Export1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBillFake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBillFake.Designer.cs">
+      <DependentUpon>frmBillFake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCarBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCarBrowse.Designer.cs">
+      <DependentUpon>frmCarBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCloseStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCloseStatus.Designer.cs">
+      <DependentUpon>frmCloseStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRmSearch.Designer.cs">
+      <DependentUpon>frmRmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCutCarSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCutCarSearch.Designer.cs">
+      <DependentUpon>frmCutCarSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDBF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDBF.Designer.cs">
+      <DependentUpon>frmDBF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisplay.Designer.cs">
+      <DependentUpon>frmDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginOption.Designer.cs">
+      <DependentUpon>frmLoginOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrint.Designer.cs">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLock.Designer.cs">
+      <DependentUpon>frmQLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuotaSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuotaSearch.Designer.cs">
+      <DependentUpon>frmQuotaSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchCar.Designer.cs">
+      <DependentUpon>frmSearchCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSend.Designer.cs">
+      <DependentUpon>frmSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetDoc.Designer.cs">
+      <DependentUpon>frmSetDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowDetail.Designer.cs">
+      <DependentUpon>frmShowDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowReport.Designer.cs">
+      <DependentUpon>frmShowReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubQuotaPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubQuotaPrint.Designer.cs">
+      <DependentUpon>frmSubQuotaPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gstr.cs" />
+    <Compile Include="GsysSQL.cs" />
+    <Compile Include="GVar.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rptCutCar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptCutCar.Designer.cs">
+      <DependentUpon>rptCutCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptDiaryReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDiaryReport.Designer.cs">
+      <DependentUpon>rptDiaryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptDiaryReportAll.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDiaryReportAll.Designer.cs">
+      <DependentUpon>rptDiaryReportAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptHourA.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptHourA.Designer.cs">
+      <DependentUpon>rptHourA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptQueue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptQueue.Designer.cs">
+      <DependentUpon>rptQueue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptBillFake.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptBillFake.Designer.cs">
+      <DependentUpon>rptBillFake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptQueue3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptQueue3.Designer.cs">
+      <DependentUpon>rptQueue3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptQueue2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptQueue2.Designer.cs">
+      <DependentUpon>rptQueue2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptReport1.Designer.cs">
+      <DependentUpon>rptReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptReportHour.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptReportHour.Designer.cs">
+      <DependentUpon>rptReportHour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptReportHourSum.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptReportHourSum.Designer.cs">
+      <DependentUpon>rptReportHourSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptReportSumTypeCane.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptReportSumTypeCane.Designer.cs">
+      <DependentUpon>rptReportSumTypeCane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptSlip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSlip.Designer.cs">
+      <DependentUpon>rptSlip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptSlip1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSlip1.Designer.cs">
+      <DependentUpon>rptSlip1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptSubDiary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSubDiary.Designer.cs">
+      <DependentUpon>rptSubDiary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptSubQuotacs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSubQuotacs.Designer.cs">
+      <DependentUpon>rptSubQuotacs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptSumHour.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSumHour.Designer.cs">
+      <DependentUpon>rptSumHour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash_Screen.Designer.cs">
+      <DependentUpon>Splash_Screen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Export1.resx">
+      <DependentUpon>Export1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBillFake.resx">
+      <DependentUpon>frmBillFake.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCarBrowse.resx">
+      <DependentUpon>frmCarBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCloseStatus.resx">
+      <DependentUpon>frmCloseStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRmSearch.resx">
+      <DependentUpon>frmRmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCutCarSearch.resx">
+      <DependentUpon>frmCutCarSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDBF.resx">
+      <DependentUpon>frmDBF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisplay.resx">
+      <DependentUpon>frmDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginOption.resx">
+      <DependentUpon>frmLoginOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLock.resx">
+      <DependentUpon>frmQLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuotaSearch.resx">
+      <DependentUpon>frmQuotaSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchCar.resx">
+      <DependentUpon>frmSearchCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSend.resx">
+      <DependentUpon>frmSend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetDoc.resx">
+      <DependentUpon>frmSetDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowDetail.resx">
+      <DependentUpon>frmShowDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowReport.resx">
+      <DependentUpon>frmShowReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubQuotaPrint.resx">
+      <DependentUpon>frmSubQuotaPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="rptCutCar.resx">
+      <DependentUpon>rptCutCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDiaryReport.resx">
+      <DependentUpon>rptDiaryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDiaryReportAll.resx">
+      <DependentUpon>rptDiaryReportAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptHourA.resx">
+      <DependentUpon>rptHourA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptQueue.resx">
+      <DependentUpon>rptQueue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBillFake.resx">
+      <DependentUpon>rptBillFake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptQueue3.resx">
+      <DependentUpon>rptQueue3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptQueue2.resx">
+      <DependentUpon>rptQueue2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptReport1.resx">
+      <DependentUpon>rptReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptReportHour.resx">
+      <DependentUpon>rptReportHour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptReportHourSum.resx">
+      <DependentUpon>rptReportHourSum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptReportSumTypeCane.resx">
+      <DependentUpon>rptReportSumTypeCane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSlip.resx">
+      <DependentUpon>rptSlip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSlip1.resx">
+      <DependentUpon>rptSlip1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSubDiary.resx">
+      <DependentUpon>rptSubDiary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSubQuotacs.resx">
+      <DependentUpon>rptSubQuotacs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSumHour.resx">
+      <DependentUpon>rptSumHour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash_Screen.resx">
+      <DependentUpon>Splash_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2017-11-17_13-28-33.ico" />
+    <Content Include="AnyDesk.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PS_DB.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Setup\AccessDatabaseEngine.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="System_Data.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxVIDEOCAPLib">
+      <Guid>{F15158C8-31F4-4D02-A18E-FFDF0FFFE433}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VIDEOCAPLib">
+      <Guid>{F15158C8-31F4-4D02-A18E-FFDF0FFFE433}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
